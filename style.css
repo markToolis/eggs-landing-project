@@ -2,28 +2,6 @@ header{
     display: flex;
     justify-content: flex-end;
 }
-.menu-btn{
-    width: 30px;
-    height: 50px;
-    position: relative;
-    z-index: 2;
-}
-.menu-btn__span{
-    width: 30px;
-    height: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: aqua;
-    border-radius: 4px;
-}
-.menu-btn__span:nth-last-of-type(2){
-    top: calc(+20%);
-}
-.menu-btn__span:nth-last-of-type(3){
-    top: calc(+80%);
-}
 .menu{
     position: fixed;
     top: 0;
@@ -34,6 +12,22 @@ header{
     transform: translateX(-100%);
     transition: 1s;
 }
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+ul a {
+    margin-left: 10px;
+}
 li{
     list-style: none ;
     
@@ -41,5 +35,26 @@ li{
 .menu.active{
     transform: translateX(0%);
 
+}
+@media (max-width:640px) {
+    .menu2 {
+        display: none;
+      }
+    .trigger {
+      display: inline-block;
+      margin: 3px;
+      cursor: pointer;
+      z-index: 3;
+    }
+    .trigger i {
+      display: block;
+      width: 30px;
+      height: 6px;
+      margin: 4px auto;
+      background: #222;
+    }
+    .show {
+      display: block;
+    }
 }
 
