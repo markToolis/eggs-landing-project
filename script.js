@@ -14,9 +14,10 @@ const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
 anchors.forEach(function(item) {
   // каждому якорю присваиваем обработчик события
   item.addEventListener('click', function(e) {
+    menu.classList.remove('active');
     // убираем стандартное поведение
     e.preventDefault();
-    
+
     // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
     let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
     

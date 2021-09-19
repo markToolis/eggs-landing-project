@@ -60,3 +60,10 @@ li{
 section{
     padding-bottom: 1000px;
 }
+.ul{
+    display: block;
+}
+.ul li {
+    padding-top: 20px;
+    padding-left: 10%;
+}
