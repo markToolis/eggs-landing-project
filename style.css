@@ -63,36 +63,17 @@ a{
   margin: 0 auto;
 }
 .main__image{
-  max-width: 65%;
+  max-width: 100%;
   display: block;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
-}
-.main__text_block{
-  margin: auto 0;
-  max-width: 27%;
-  padding-right: 15px;
-}
-.main__text{
-  font-weight: 800;
-  font-size: 175%;
-}
-.main__first_word{
-  font-weight: 800;
-  font-style: italic;
-  font-size: 130%;
-  
+  margin-top: 40px;
 }
 ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 50px;
-}
-.main__block{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px; 
 }
 
 ul a {
@@ -129,14 +110,6 @@ li{
     .main__image{
       max-width: 90%;
       margin: 40px auto; 
-    }
-    .main__block{
-      display: block;
-      margin-top: 40px; 
-    }
-    .main__text_block{
-      margin: 0 auto;
-      max-width: 75%;
     }
 }
 section{
