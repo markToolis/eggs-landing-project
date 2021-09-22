@@ -1,3 +1,4 @@
+//бургер меню
 let btn = document.querySelector('#trigger'),
     menu = document.querySelector('.menu');
     
@@ -6,6 +7,7 @@ btn.addEventListener('click', () => {
     menu.classList.toggle('active');   
 });
 
+//плавное перемещение по якорям 
 
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
       animationTime = 700,
@@ -40,6 +42,7 @@ anchors.forEach(function(item) {
     }, animationTime / framesCount);
   });
 });
+//кнопка вверх
 (function() {
     'use strict';
   
