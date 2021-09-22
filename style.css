@@ -95,6 +95,10 @@ li{
     .show {
       display: block;
     }
+    .main__image{
+      max-width: 90%;
+      margin: 40px auto; 
+    }
 }
 section{
     padding-bottom: 1000px;
