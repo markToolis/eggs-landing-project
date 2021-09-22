@@ -32,6 +32,17 @@ a{
     font-weight: 400;
     font-size: 100%;
   }
+  .main__text{
+    font-weight: 600;
+    font-size: 155%;
+  }
+  .main__first_word{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1100%;
+    
+  }
+
 }
 @media (max-width:1040px){
   .menu2{
@@ -45,6 +56,7 @@ a{
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: 'Poppins';
 }
 .conteiner{
   max-width: 1200px;
@@ -55,13 +67,32 @@ a{
   display: block;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0,0,0,0.5);
-  margin-top: 40px; 
+}
+.main__text_block{
+  margin: auto 0;
+  max-width: 27%;
+  padding-right: 15px;
+}
+.main__text{
+  font-weight: 800;
+  font-size: 175%;
+}
+.main__first_word{
+  font-weight: 800;
+  font-style: italic;
+  font-size: 130%;
+  
 }
 ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 50px;
+}
+.main__block{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px; 
 }
 
 ul a {
@@ -99,6 +130,14 @@ li{
       max-width: 90%;
       margin: 40px auto; 
     }
+    .main__block{
+      display: block;
+      margin-top: 40px; 
+    }
+    .main__text_block{
+      margin: 0 auto;
+      max-width: 75%;
+    }
 }
 section{
     padding-bottom: 1000px;
@@ -132,4 +171,21 @@ section{
   
   .back_to_top-show {
     display: block;
+  }
+  @media (max-width:1150px){
+    .menu2{
+      font-weight: 400;
+      font-size: 100%;
+    }
+    .main__text{
+      font-weight: 600;
+      font-size: 155%;
+    }
+    .main__first_word{
+      font-weight: 600;
+      font-style: italic;
+      font-size: 110%;
+      
+    }
+  
   }
